@@ -1,7 +1,6 @@
-#HowTo?:https://github.com/real9hsas/9hsas-waybar-configs
+#HowTo?:
 
-
-`https://github.com/real9hsas/9hsas-waybar-configs`
+`git clone https://github.com/real9hsas/9hsas-waybar-configs`
 
 `cd 9hsas-waybar-configs`
 
