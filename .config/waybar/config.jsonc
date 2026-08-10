@@ -1,0 +1,66 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": "30",
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["power-profiles-daemon", "battery", "network" ,"cpu", "memory", "tray", "pulseaudio"],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀  Connected",
+    "format-disconnected": "  Offline"
+  },
+
+"pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+        "headphones": "",
+        "default": ["", ""]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+},
+
+"power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": "",
+    "power-saver": ""
+  }
+},
+
+  "battery": {
+    "format": "{capacity}%",
+    "format-charging": " {capacity}%",
+    "format-full": "  {capacity}%"
+  },
+
+  "cpu": {
+    "format": "  {usage}%"
+  },
+
+  "memory": {
+    "format": "  {used}MB"
+  },
+   
+  "tray": {
+    "spacing": 10
+  }
+}
